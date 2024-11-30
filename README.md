@@ -2,6 +2,14 @@
 
 Creating your own Super Saiyan or power up form.
 
+
+
+Step 0 : Rimworld and Defs a very quick primer.
+You can think of Defs in Rimworld as data stored in XML files, these often contain configuration information - information that does not change behaviour - such as you can set which SoundDef is played when the ability triggers but you can not change when that sound is played, that requires c#.
+
+You can find all Definitions in the game within the `Data/Core/Defs/` or  `Data/DLC/Defs/`folder - note it does not matter where you place these files inside the Defs folder, you can place every single def of every single type into one file if you wished, or break them down into folders, all that matter is the XML is properly opened and closed and the XML is valid - that is there are no errors in the formatting or closing of tags and the like. Ludeon place Defs of the same type inside a folder following the def types name, this is just for organisational sake but it is always worth taking note when the developers of the game you are modding follow a certain practice.
+
+
 Step 1 : Define the AbilityDef this is not a base game AbilityDef this is from the TaranMagicFramework and as such we need to specify our AbilityDef comes from that namespace
 
 Below is the XML that defines the Ability itself.
